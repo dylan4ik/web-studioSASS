@@ -1,11 +1,11 @@
 @import "./base/reset";
 @import "./base/base";
 
-
-@import "./sections/header";
+@import "./utills/vars.scss";
+@import "./components/header";
 @import "./sections/hero";
 @import "./sections/business";
 @import "./sections/helpers";
 @import "./sections/team";
 @import "./sections/clients";
-@import "./sections/footer";
+@import "./components/footer";

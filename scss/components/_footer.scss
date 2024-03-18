@@ -1,8 +1,8 @@
 footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: #2F303A;
-    footer-container {
+    background-color: $text-title;
+    &__container {
         display: flex;
     
     }
@@ -13,7 +13,7 @@ footer {
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        color: #2196F3;
+        color:  $word-color;
         display: block;
         margin-bottom: 20px;
         padding-right: 152px;
@@ -21,7 +21,7 @@ footer {
     }
     
     &__text {
-        color: #FFF;
+        color: $word-color;
         font-family: Roboto;
         font-size: 14px;
         font-style: normal;
@@ -34,7 +34,7 @@ footer {
     }
     
     &__svgg {
-        fill: #FFFFFF;
+        fill: $word-color;
         width: 20px;
         height: 20px;
     
@@ -53,7 +53,7 @@ footer {
    
     
     &__logo2 {
-        color: #FFFFFF;
+        color: $word-color;
     }
     
     &__address {
@@ -61,7 +61,7 @@ footer {
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-        color: #FFFFFF;
+        color: $word-color;
         font-style: normal;
         margin-bottom: 9px;
     
@@ -72,7 +72,7 @@ footer {
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
+        color: $word-color;
     
     }
     

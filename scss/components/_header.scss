@@ -7,13 +7,13 @@ header {
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        color: #2196F3;
+        color: $word-color ;
     
     
     }
     
     &__2 {
-        color: #000000;
+        color: $word-color ;
     
     }
     
@@ -45,17 +45,17 @@ header {
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: #000000;
+        color: $word-color ;
         
     &:hover {
-        color: #2196F3;
+        color: $word-color ;
     }
     &::after {
         position: absolute;
         bottom: -30px;
         display: block;
         content: "";
-        background-color: #2196F3;
+        background-color: $word-color ;
         width: 100%;
         height: 3px;
     
@@ -70,9 +70,9 @@ header {
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: #757575; 
+        color: $word-color ; 
         &:hover {
-            color: #2196F3;
+            color: $word-color ;
         }
     }
     
@@ -80,9 +80,9 @@ header {
     &__contact {
         width: 16px;
         height: 12px;
-        fill: #757575;
+        fill: $word-color;
         &:hover {
-            fill: #2196F3;
+            fill: $word-color ;
         }
     }
     
@@ -90,9 +90,9 @@ header {
     &__contact {
         width: 10px;
         height: 16px;
-        fill: #757575;
+        fill: $word-color ;
         &:hover {
-            fill: #2196F3;
+            fill: $word-color ;
         }
     }
     

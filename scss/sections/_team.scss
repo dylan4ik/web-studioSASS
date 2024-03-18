@@ -15,7 +15,7 @@
         line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
-        color: #212121;
+        color: $title-color;
     }
 
     &__subtitle {
@@ -24,7 +24,7 @@
         line-height: 1.19;
         text-align: center;
         letter-spacing: 0.03em;
-        color: #212121;
+        color: $title-color;
         margin-top: 30px;
         margin-bottom: 10px;
 
@@ -36,7 +36,7 @@
         line-height: 1.19;
         text-align: center;
         letter-spacing: 0.03em;
-        color: #757575;
+        color: $word-color;
 
     }
 
@@ -48,7 +48,7 @@
 
 
 
-    &__list__item {
+    &__item {
         padding-bottom: 30px;
         border-radius: 0px 0px 4px 4px;
         background: #FFF;
@@ -63,20 +63,12 @@
         padding-bottom: 42px;
     }
 
-    &__icon__svg {
+    &__icong {
         fill: #AFB1B8;
+
+    &:hover {
+            fill: #FFFFFF;
+        }
     }
 
-    &__icon__svg:hover {
-        fill: #FFFFFF;
-    }
-
-    &__svg__link:hover {
-        fill: #2196F3;
-        width: 44px;
-        height: 44px;
-        display: flex;
-        flex-direction: column;
-
-    }
 }

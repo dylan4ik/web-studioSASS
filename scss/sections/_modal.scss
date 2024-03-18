@@ -1,10 +1,25 @@
+.modal {
+    width: 528px;
+    min-height: 581px;
+    transform: scale(1);
+    opacity: 1;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms;
+    flex-shrink: 0;
+    border-radius: 4px;
+    $background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    position: relative;
+
+}
+
 .decision {
     padding-top: 200px;
     padding-bottom: 200px;
 }
 
 .backdrop {
-    background: rgba(0, 0, 0, 0.20);
+    $background: rgba(0, 0, 0, 0.20);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -15,38 +30,25 @@
     align-items: center;
 }
 
-.modal {
-    width: 528px;
-    min-height: 581px;
-    transform: scale(1);
-    opacity: 1;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 250ms;
-    flex-shrink: 0;
-    border-radius: 4px;
-    background: #FFF;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    position: relative;
 
-}
 
 .is-hidden .modal {
     transform: translate(0);
 }
 
-.modal-item {
+&__item {
     padding-right: 41px;
     padding-left: 39px;
     position: relative;
 }
 
-.modal-cross {
+&__cross {
     width: 18px;
     height: 18px;
     position: absolute;
     right: 14px;
     top: 14px;
-    border: #188CE8;
+    $border: #188CE8;
 
 
 }
@@ -57,13 +59,13 @@
 
 }
 
-.modal-input {
+&__input {
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
 
 }
 
-.modal-input4 {
+&__input4 {
     width: 448px;
     height: 120px;
     flex-shrink: 0;
@@ -72,8 +74,8 @@
 
 }
 
-.modal-title {
-    color: #212121;
+&__title {
+    color: $title-color;
     text-align: center;
     font-family: Roboto;
     font-size: 20px;
@@ -85,8 +87,8 @@
     padding-bottom: 12px;
 }
 
-.modal-subtext1 {
-    color: #757575;
+&__subtext1 {
+    color: $word-color;
     font-family: Roboto;
     font-size: 12px;
     font-style: normal;
@@ -96,8 +98,8 @@
     padding-bottom: 4px;
 }
 
-.modal-subtext {
-    color: #757575;
+&__subtext {
+    color: $word-color;
     font-family: Roboto;
     font-size: 12px;
     font-style: normal;
@@ -108,7 +110,7 @@
     padding-top: 10px;
 }
 
-.modal-icon {
+&__icon {
     width: 18px;
     height: 18px;
     display: block;
@@ -120,24 +122,25 @@
 
 }
 
-.modal-check {
+&__check {
     border-radius: 3px;
-    border: 2px solid #212121;
+    border: 2px solid $title-color;
     margin-right: 10px;
     width: 16px;
     height: 15px;
     fill: #FFF;
+    &:hover {
+        cursor: pointer;
+        border: none;
+        background-color: #188CE8;
+    }
 
 }
 
-.modal-check:hover {
-    cursor: pointer;
-    border: none;
-    background-color: #188CE8;
-}
 
 
-.modal-button {
+
+&__button {
     width: 200px;
     height: 50px;
     flex-shrink: 0;
@@ -168,24 +171,25 @@ input {
     padding-top: 12px;
     padding-right: 16px;
     padding-bottom: 16px;
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.50);
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+    }
 
 }
 
-input::placeholder {
-    color: rgba(117, 117, 117, 0.50);
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
-}
 
-.rules-title {
+
+&__title {
     width: 400px;
     height: 24px;
     flex-shrink: 0;
-    color: #757575;
+    color: $word-color;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -197,8 +201,8 @@ input::placeholder {
 
 }
 
-.rules-site {
-    color: #2196F3;
+&__site {
+    color: $accent-color;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -210,7 +214,7 @@ input::placeholder {
 
 }
 
-.rules-box {
+&__box {
     display: flex;
     margin-top: 20px;
     justify-content: center;
