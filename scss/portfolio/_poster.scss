@@ -24,7 +24,7 @@
 }
 
 .poster-message {
-    color: $text-color #FFFFFF;
+    color: $word-color #FFFFFF;
     padding-bottom: 63px;
     height: 168px;
     width: 322px;
@@ -60,11 +60,11 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: $text-color $text-color;
+    color: $word-color $word-color;
 }
 
 .link-contact:hover {
-    color: $text-color $accent-color;
+    color: $word-color $accent-color;
 }
 
 .button-element {
@@ -72,7 +72,7 @@
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: $text-color #212121;
+    color: $word-color #212121;
     $background: #F5F4FA;
     border-radius: 4px;
     width: 112px;
@@ -85,7 +85,7 @@
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: $text-color #FFFFFF;
+    color: $word-color #FFFFFF;
     background: $accent-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
@@ -110,7 +110,7 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: $text-color #212121;
+    color: $word-color #212121;
 
 }
 
@@ -119,5 +119,5 @@
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    color: $text-color $text-color;
+    color: $word-color $word-color;
 }
