@@ -3,12 +3,9 @@
     padding-bottom: 94px;
 
     &__title {
-        color: $word-color;
-        text-align: center;
+        @include title();
         font-family: Roboto;
-        font-size: 36px;
         font-style: normal;
-        font-weight: 700;
         line-height: normal;
         letter-spacing: 1.08px;
         display: flex;

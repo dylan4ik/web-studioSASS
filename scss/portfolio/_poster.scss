@@ -1,123 +1,130 @@
-.poster-list {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    position: relative;
+    .poster {
+        &__list {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            position: relative;
 
-}
-
-.poster-item {
-    border: #EEEEEE;
-
-
-}
-
-.poster-square {
-    position: relative;
-
-}
-
-.poster-square:hover .overlay {
-    opacity: 1;
-    top: 0;
-}
-
-.poster-message {
-    color: $word-color #FFFFFF;
-    padding-bottom: 63px;
-    height: 168px;
-    width: 322px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 156%;
-    letter-spacing: 0.03em;
-    color: #fff;
-}
-
-.overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 500px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: $accent-color;
-    opacity: 0;
-    transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &__item {
+                border: #EEEEEE;
 
 
-}
+            }
+
+            &__square {
+                position: relative;
+
+                &:hover & {
+                    opacity: 1;
+                    top: 0;
+                }
+            }
 
 
-.button-list {
-    justify-content: center;
-}
 
-.link-contact {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $word-color $word-color;
-}
+            &__message {
+                color: $word-color #FFFFFF;
+                padding-bottom: 63px;
+                height: 168px;
+                width: 322px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 156%;
+                letter-spacing: 0.03em;
+                color: #fff;
+            }
 
-.link-contact:hover {
-    color: $word-color $accent-color;
-}
+            & {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 500px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: $accent-color;
+                opacity: 0;
+                transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.button-element {
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $word-color #212121;
-    $background: #F5F4FA;
-    border-radius: 4px;
-    width: 112px;
-    height: 38px;
-    border: #F5F4FA;
-}
 
-.button-element:hover {
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $word-color #FFFFFF;
-    background: $accent-color;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    border: $accent-color;
-    transition: border 250ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transform: rotate(180deg);
-}
+            }
 
-.button-list {
-    display: flex;
-    gap: 24px;
-    
-}
 
-.poster-item:hover {
-    background: #FFF;
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12)
-}
+            &__list {
+                justify-content: center;
+            }
 
-.poster-name {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: $word-color #212121;
+            &__contact {
+                font-size: 14px;
+                line-height: 1.14;
+                letter-spacing: 0.02em;
+                color: $word-color $word-color;
 
-}
+                &:hover {
+                    color: $word-color $accent-color;
+                }
+            }
 
-.poster-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: $word-color $word-color;
-}
+
+
+            &__element {
+                font-size: 16px;
+                line-height: 1.62;
+                text-align: center;
+                letter-spacing: 0.03em;
+                color: $word-color #212121;
+                $background: #F5F4FA;
+                border-radius: 4px;
+                width: 112px;
+                height: 38px;
+                border: #F5F4FA;
+
+                &:hover {
+                    font-size: 16px;
+                    line-height: 1.62;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    color: $word-color #FFFFFF;
+                    background: $accent-color;
+                    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+                    border-radius: 4px;
+                    border: $accent-color;
+                    transition: border 250ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                    transform: rotate(180deg);
+                }
+            }
+
+
+
+            &__list {
+                display: flex;
+                gap: 24px;
+
+            }
+
+            &__:hover {
+                background: #FFF;
+                box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12)
+            }
+
+            &__name {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 2;
+                letter-spacing: 0.06em;
+                color: $word-color #212121;
+
+            }
+
+            &__text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.87;
+                letter-spacing: 0.03em;
+                color: $word-color $word-color;
+            }
+
+        }
+    }

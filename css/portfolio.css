@@ -29,11 +29,11 @@ body {
   font-family: "Roboto";
 }
 
-header {
+.header {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-header {
+.header {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -41,25 +41,25 @@ header {
   letter-spacing: 0.03em;
   color: #757575;
 }
-header__2 {
+.header__2 {
   color: #757575;
 }
-header__nav {
+.header__nav {
   display: flex;
   gap: 93px;
   align-items: center;
 }
-header__list {
+.header__list {
   display: flex;
   gap: 50px;
 }
-header__contacts {
+.header__contacts {
   display: flex;
   margin-left: auto;
   align-items: center;
   gap: 50px;
 }
-header__page {
+.header__page {
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -67,10 +67,10 @@ header__page {
   letter-spacing: 0.02em;
   color: #757575;
 }
-header__page:hover {
+.header__page:hover {
   color: #757575;
 }
-header__page::after {
+.header__page::after {
   position: absolute;
   bottom: -30px;
   display: block;
@@ -79,55 +79,51 @@ header__page::after {
   width: 100%;
   height: 3px;
 }
-header__contact {
+.header__contact {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
 }
-header__contact:hover {
+.header__contact:hover {
   color: #757575;
 }
-header__contact {
+.header__contact {
   width: 16px;
   height: 12px;
   fill: #757575;
 }
-header__contact:hover {
+.header__contact:hover {
   fill: #757575;
 }
-header__contact {
+.header__contact {
   width: 10px;
   height: 16px;
   fill: #757575;
 }
-header__contact:hover {
+.header__contact:hover {
   fill: #757575;
 }
 
-.poster-list {
+.poster__list {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   margin-top: 50px;
   position: relative;
 }
-
-.poster-item {
+.poster__list__item {
   border: #EEEEEE;
 }
-
-.poster-square {
+.poster__list__square {
   position: relative;
 }
-
-.poster-square:hover .overlay {
+.poster__list__square:hover .poster__list__square {
   opacity: 1;
   top: 0;
 }
-
-.poster-message {
+.poster__list__message {
   color: #757575 #FFFFFF;
   padding-bottom: 63px;
   height: 168px;
@@ -138,8 +134,7 @@ header__contact:hover {
   letter-spacing: 0.03em;
   color: #fff;
 }
-
-.overlay {
+.poster__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,23 +147,19 @@ header__contact:hover {
   opacity: 0;
   transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button-list {
+.poster__list__list {
   justify-content: center;
 }
-
-.link-contact {
+.poster__list__contact {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575 #757575;
 }
-
-.link-contact:hover {
+.poster__list__contact:hover {
   color: #757575 #2196F3;
 }
-
-.button-element {
+.poster__list__element {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
@@ -179,8 +170,7 @@ header__contact:hover {
   height: 38px;
   border: #F5F4FA;
 }
-
-.button-element:hover {
+.poster__list__element:hover {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
@@ -193,26 +183,22 @@ header__contact:hover {
   transition: border 250ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: rotate(180deg);
 }
-
-.button-list {
+.poster__list__list {
   display: flex;
   gap: 24px;
 }
-
-.poster-item:hover {
+.poster__list__:hover {
   background: #FFF;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
-
-.poster-name {
+.poster__list__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: #757575 #212121;
 }
-
-.poster-text {
+.poster__list__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;

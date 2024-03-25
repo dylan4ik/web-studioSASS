@@ -1,4 +1,4 @@
-header {
+.header {
     padding-top: 24px;
     padding-bottom: 24px;
     & {
@@ -47,10 +47,10 @@ header {
         letter-spacing: 0.02em;
         color: $word-color ;
         
-    &:hover {
+    &__:hover {
         color: $word-color ;
     }
-    &::after {
+    &__::after {
         position: absolute;
         bottom: -30px;
         display: block;
@@ -81,7 +81,7 @@ header {
         width: 16px;
         height: 12px;
         fill: $word-color;
-        &:hover {
+        &__:hover {
             fill: $word-color ;
         }
     }
