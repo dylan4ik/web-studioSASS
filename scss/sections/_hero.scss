@@ -1,7 +1,7 @@
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    $background-color: $title-color;
+    background-color: $title-color;
     box-shadow: inset;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team.png);
     background-repeat: no-repeat;
@@ -27,8 +27,8 @@
         line-height: 1.87;
         letter-spacing: 0.06em;
         color: #FFFFFF;
-        $background-color: $accent-color;
-        $border: $accent-color;
+        background-color: $accent-color;
+        border: $accent-color;
         width: 216px;
         height: 50px;
         display: block;

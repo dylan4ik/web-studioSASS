@@ -29,11 +29,11 @@
         padding-right: 32px;
         padding-left: 32px;
 
-        &:hover {
+        &__:hover {
             border: 1px solid $word-color;
         }
 
-        &:focus {
+        &__:focus {
             fill: $word-color;
         }
     }
@@ -44,7 +44,7 @@
         height: 60px;
         flex-shrink: 0;
 
-        &:hover {
+        &__:hover {
             fill: $word-color;
         }
     }

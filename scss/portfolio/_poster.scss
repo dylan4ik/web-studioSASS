@@ -15,7 +15,7 @@
             &__square {
                 position: relative;
 
-                &:hover & {
+                &__:hover &__ {
                     opacity: 1;
                     top: 0;
                 }
@@ -75,7 +75,7 @@
                 text-align: center;
                 letter-spacing: 0.03em;
                 color: $word-color #212121;
-                $background: #F5F4FA;
+                background: #F5F4FA;
                 border-radius: 4px;
                 width: 112px;
                 height: 38px;

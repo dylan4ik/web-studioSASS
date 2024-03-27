@@ -7,7 +7,7 @@
     transition: transform 250ms;
     flex-shrink: 0;
     border-radius: 4px;
-    $background: #FFF;
+    background: #FFF;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     position: relative;
 
@@ -19,7 +19,7 @@
 }
 
 .backdrop {
-    $background: rgba(0, 0, 0, 0.20);
+    background: rgba(0, 0, 0, 0.20);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -48,7 +48,7 @@
     position: absolute;
     right: 14px;
     top: 14px;
-    $border: #188CE8;
+    border: #188CE8;
 
 
 }
@@ -129,7 +129,7 @@
     width: 16px;
     height: 15px;
     fill: #FFF;
-    &:hover {
+    &__:hover {
         cursor: pointer;
         border: none;
         background-color: #188CE8;
@@ -163,7 +163,7 @@
 
 }
 
-input {
+.input {
     width: 448px;
     height: 40px;
     flex-shrink: 0;
@@ -171,7 +171,7 @@ input {
     padding-top: 12px;
     padding-right: 16px;
     padding-bottom: 16px;
-    &::placeholder {
+    &__::placeholder {
         color: rgba(117, 117, 117, 0.50);
         font-family: Roboto;
         font-size: 12px;
